@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
-    namespace = "com.harshRajpurohit.musicPlayer"
+    namespace = "com.sahiljeet.musicPlayer"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.harshRajpurohit.musicPlayer"
+        applicationId = "com.sahiljeet.musicPlayer"
         minSdk = 21
         targetSdk = 34
         versionCode = 11
@@ -65,5 +66,6 @@ dependencies {
 
     // Vertical Seekbar
     implementation(libs.verticalseekbar)
+    implementation(libs.firebase.database)
 
 }
